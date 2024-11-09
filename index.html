@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itacerâmica cerâmica, piso e telhas para sua construção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1 class="logo">
+            Itacerâmica
+        </h1>
+        <button type="button" class="dropdown-pesquisa">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                width="50px" height="50px" fill-rule="nonzero">
+                <g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(5.12,5.12)">
+                        <path
+                            d="M21,3c-9.39844,0 -17,7.60156 -17,17c0,9.39844 7.60156,17 17,17c3.35547,0 6.46094,-0.98437 9.09375,-2.65625l12.28125,12.28125l4.25,-4.25l-12.125,-12.09375c2.17969,-2.85937 3.5,-6.40234 3.5,-10.28125c0,-9.39844 -7.60156,-17 -17,-17zM21,7c7.19922,0 13,5.80078 13,13c0,7.19922 -5.80078,13 -13,13c-7.19922,0 -13,-5.80078 -13,-13c0,-7.19922 5.80078,-13 13,-13z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <div class="caixa-de-pesquisa">
+            <form action="" class="pesquisa">
+                <input type="text" placeholder="Encontre os melhores produtos aqui">
+                <button type="submit"><img src="Assets/search.svg" width="30px" height="30px"></button>
+            </form>
+        </div>
+        <button id="perfil">
+            <label for="perfil">Dósea</label>
+            <img src="Assets/usuario.svg" alt="user" width="40px" height="40px">
+        </button>
+
+    </header>
+    <nav class="nav-itaceramica">
+        <button class="dropdown-nav" onclick="showMenu()">
+            <img src="Assets/menu.svg" width="100%" height="100%" alt="menu">
+        </button>
+
+        <ul class="Segmentos">
+            <li class="nav-li-active">
+                <a class="nav-link-active" href="#promocao">Todos os departamentos</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="#promo">pisos</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="#promo">telhas</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="#maisvendidos">vasos sanitários</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="#maisvendidos">mais vendidos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/pisos.png" class="d-block w-100" alt="pisos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tudo para sua construção</h5>
+                    <p>Produtos selecionados com até 13% de desconto.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/blocos.png" class="d-block w-100" height="250px" alt="vários blocos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Blocos com até 7 furos.</h5>
+                    <p>Promoção! o oitavo furo é de graça.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/queda-idoso.png" class="d-block w-100" height="250px" alt="idosa caindo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pisos antiderrapantes!</h5>
+                    <p>Cuide de quem mais precisa.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section>
+
+        <div class="produtos">
+            <img src="Assets/piso-ceramico-hd-marrom-mosaico.png" alt="Piso Cerâmico HD Marrom Mosaico" class="p_img">
+
+            <p class="nome">
+                Piso Cerâmico HD Marrom Mosaico com Textura TouchAd 58x58cm
+            </p>
+            <p class="precofalso">
+                $30,75/m2
+            </p>
+            <p class="preco">
+                $28,90/m2
+            </p>
+
+            <a class="comprar" href="html/piso-ceramico-hd-marrrom-mosaico.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+
+        </div>
+        <div class="produtos">
+            <img src="Assets/piso-hd-em-ceramica-estilo-marmore-acetinado-marmogres.png"
+                alt="Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres" class="p_img">
+            <p class="nome">
+                Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres
+            </p>
+            <p class="precofalso">
+                $30,75/m2
+            </p>
+            <p class="preco">
+                $28,90/m2
+            </p>
+            <a class="comprar" href="html/piso-hd-em-ceramico-estilo-marmore-acetinado-marmogres.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/revestimento-branco-brilhante-esmaltado-vivence.png"
+                alt="Revestimento Branco Brilhante Esmaltado Vivence" class="p_img">
+
+            <p class="nome">
+                Revestimento Branco Brilhante Esmaltado Vivence 32x58cm 160000
+            </p>
+            <p class="precofalso">
+                $56,36/m2
+            </p>
+            <p class="preco">
+                $23,79/m2
+            </p>
+            <a class="comprar" href="html/revestimento-branco-brilhante-esmaltado-vivence.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/revestimento-pierini-azul-cobalto-brilhante.png"
+                alt="Revestimento Pierini Azul Cobalto Brilhante" class="p_img">
+
+            <p class="nome">
+                Revestimento Pierini Azul Cobalto Brilhante 20x20cm
+            </p>
+            <p class="precofalso">
+                $71,91/m2
+            </p>
+            <p class="preco">
+                $67,60/m2
+            </p>
+            <a class="comprar" href="html/revestimento-pierini-azul-cobalto-brilhante.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/piso-ceramico-embramaco-nevada-mate-acetinado.png"
+                alt="Piso Cerâmico Embramaco Nevada Mate Acetinado " class="p_img">
+
+            <p class="nome">
+                Piso Cerâmico Embramaco Nevada Mate Acetinado 60x60cm
+            </p>
+            <p class="precofalso">
+                $1300,75/m2
+            </p>
+            <p class="preco">
+                $34,90/m2
+            </p>
+            <a class="comprar" href="html/piso-ceramico-embramaco-nevada-mate-acetinado.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/porcelanato-damme-calacata-acetinado.png" alt="Porcelanato Damme Calacata Acetinado"
+                class="p_img">
+
+            <p class="nome">
+                Porcelanato Damme Calacata Acetinado 62x121cm
+            </p>
+            <p class="precofalso">
+                $89,75/m2
+            </p>
+            <p class="preco">
+                $69,96/m2
+            </p>
+            <a class="comprar" href="html/porcelanato-damme-calacata-acetinado.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/piso-azul-aquarela-porto-ferreira-ceramica-brilhante.png"
+                alt="Piso Azul Aquarela Porto Ferreira Cerâmica Brilhante" class="p_img">
+
+            <p class="nome">
+                Piso Azul Aquarela Porto Ferreira Cerâmica Brilhante 25x25cm
+            </p>
+            <p class="precofalso">
+                $77,75/m2
+            </p>
+            <p class="preco">
+                $77,70/m2
+            </p>
+            <a class="comprar" href="html/piso-azul-aquarela-porto-ferreira-ceramica-brilhante.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/revestimento-embramaco-brick-red-acetinado.png"
+                alt="Revestimento Embramaco Brick Red Acetinado 34x58cm" class="p_img">
+
+            <p class="nome">
+                Revestimento Embramaco Brick Red Acetinado 34x58cm
+            </p>
+            <p class="precofalso">
+                $80,75/m2
+            </p>
+            <p class="preco">
+                $52,90/m2
+            </p>
+            <a class="comprar" href="html/revestimento-embramaco-brick-red-acetinado.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/cobogo-manufatti-talisma-branco.png" alt="Cobogó Manufatti Talismã Branco" class="p_img">
+
+            <p class="nome">
+                Cobogó Manufatti Talismã Branco 20x20cm
+            </p>
+            <p class="precofalso">
+                $66,75/m2
+            </p>
+            <p class="preco">
+                $71,90/m2
+            </p>
+            <a class="comprar" href="html/cobogo-talisma.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/porcelanato-delta-tecno-avorio-polido.png" alt="Porcelanato Delta Tecno Avório Polido"
+                class="p_img">
+
+            <p class="nome">
+                Porcelanato Delta Tecno Avório Polido 62x62cm
+            </p>
+            <p class="precofalso">
+                $87,75/m2
+            </p>
+            <p class="preco">
+                $69,90/m2
+            </p>
+            <a class="comprar" href="html/porcelanato-delta-tecno-avorio-polido.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+    </section>
+    <h1 id="maisvendidos" class="Titulo">
+        Mais vendidos
+    </h1>
+    <section>
+
+        <div class="produtos">
+            <img src="Assets/vaso-sanitario-incepa-convencional-branco-boss.png"
+                alt="Vaso Sanitário Incepa Convencional Branco Boss" class="p_img">
+
+            <p class="nome">
+                Vaso Sanitário Incepa Convencional Branco Boss
+            </p>
+            <p class="precofalso">
+                $887,75
+            </p>
+            <p class="preco">
+                $699,90
+            </p>
+            <a class="comprar" href="html/vaso-sanitário-incepa-convencional-branco-boss.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/telha-em-pvc-preconvc-plan-ceramica.png" alt="Telha em PVC Preconvc Plan Cerâmica"
+                class="p_img">
+
+            <p class="nome">
+                Telha em PVC Preconvc Plan Cerâmica 2,42x0,88cm
+            </p>
+            <p class="precofalso">
+                $100,75
+            </p>
+            <p class="preco">
+                $99,90
+            </p>
+            <a class="comprar" href="html/telha-em-pvc-preconvc-plan-ceramica.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+        <div class="produtos">
+            <img src="Assets/bloco.png" alt="bela imagem de um Bloco com incriveis 8 furos" class="p_img">
+
+            <p class="nome">
+                Bloco 7 furos + 1 especialidade da casa
+            </p>
+            <p class="precofalso">
+                $0,99
+            </p>
+            <p class="preco">
+                $99,00
+            </p>
+            <a class="comprar" href="html/bloco.html" onclick="">
+                Comprar
+            </a>
+            <button class="favoritar">
+                <img src="Assets/coracao.png" alt="favoritar">
+            </button>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #0a0">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="html/quem-somos.html">
+                                Quem Somos
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="html/politicas-de-privacidade.html">
+                                Politicas de privacidade
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="html/trabalhe-conosco.html">
+                                Trabalhe conosco
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="html/quero-fazer-meu-orçamento.html">
+                                Quero fazer meu orçamento
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="html/novas-tendencias.html">
+                                Novas Tendencias
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+
+            </section>
+
+            <hr class="my-2" />
+
+            <div class="row d-flex justify-content-center">
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <p>
+                                Uma empresa de qualidade que visa melhorar cada vez mais os seus produtos
+                                A Itacerâmica busca melhorias dia a dia,  sempre se colocando a disposição para novos conceitos e formas de inovar e satisfazer seus clientes com toda a qualidade e segurança que a construção civil exige.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <hr class="my-5" />
+
+            <details>
+                <summary>Informações adicionais</summary>
+                <ul>
+                    <li>
+                        Formas de pagamento aceitas: cartões(banese e o que passar na maquininha), dinheiro e Pix.
+                    </li>
+                    <li>
+                        Itacerâmica Marcos Dósea produções Ltda. | CNPJ 00.000.000/0000-00
+                    </li>
+                    <li>
+                        Av. Ver. Olímpio Grande, s/n - Porto, Itabaiana - SE, 49500-000
+                    </li>
+                </ul>
+            </details>
+
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023-2023 Itacerâmica.com, Inc. ou suas afiliadas
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

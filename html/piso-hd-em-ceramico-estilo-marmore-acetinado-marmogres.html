@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itacerâmica - Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1 class="logo">
+            Itacerâmica
+        </h1>
+        <button type="button" class="dropdown-pesquisa">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                width="50px" height="50px" fill-rule="nonzero">
+                <g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(5.12,5.12)">
+                        <path
+                            d="M21,3c-9.39844,0 -17,7.60156 -17,17c0,9.39844 7.60156,17 17,17c3.35547,0 6.46094,-0.98437 9.09375,-2.65625l12.28125,12.28125l4.25,-4.25l-12.125,-12.09375c2.17969,-2.85937 3.5,-6.40234 3.5,-10.28125c0,-9.39844 -7.60156,-17 -17,-17zM21,7c7.19922,0 13,5.80078 13,13c0,7.19922 -5.80078,13 -13,13c-7.19922,0 -13,-5.80078 -13,-13c0,-7.19922 5.80078,-13 13,-13z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <div class="caixa-de-pesquisa">
+            <form action="" class="pesquisa">
+                <input type="text" placeholder="Encontre os melhores produtos aqui">
+                <button type="submit"><img src="../Assets/search.svg" width="30px" height="30px"></button>
+            </form>
+        </div>
+        <button id="perfil">
+            <label for="perfil">Dósea</label>
+            <img src="../Assets/usuario.svg" alt="user" width="40px" height="40px">
+        </button>
+
+    </header>
+    <nav>
+        <button class="dropdown-nav" onclick="showMenu()">
+            <img src="../Assets/menu.svg" width="100%" height="100%" alt="menu">
+        </button>
+
+        <ul class="Segmentos">
+            <li class="nav-li-active">
+                <a class="nav-link-active" href="../index.html#promo">Todos os departamentos</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="../index.html#promo">pisos</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="../index.html#promo">telhas</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="../index.html#maisvendidos">vasos sanitários</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-anchor" href="../index.html#maisvendidos">mais vendidos</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="Product">
+        <div class="Imagem">
+            <img class="ImagemPrincipal" src="../Assets/piso-hd-em-ceramica-estilo-marmore-acetinado-marmogres.png"
+                alt="imagem de Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres">
+            <ul class="listaImagens">
+                <li><img onclick="trocarImagens(this)"
+                        src="../Assets/imagem-2-de-piso-hd-em-ceramica-estilo-marmore-acetinado-marmogres.png"
+                        alt="imagem 2 de Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres"></li>
+                <li><img onclick="trocarImagens(this)"
+                        src="../Assets/imagem-3-de-piso-hd-em-ceramica-estilo-marmore-acetinado-marmogres.png"
+                        alt="imagem 3 de Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres"></li>
+                <li><img onclick="trocarImagens(this)"
+                        src="../Assets/imagem-4-de-piso-hd-em-ceramica-estilo-marmore-acetinado-marmogres.png"
+                        alt="imagem 4 de Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres"></li>
+            </ul>
+        </div>
+        <div class="Detalhes">
+            <h1 class="Titulo">
+                Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres
+            </h1>
+            <p class="precofalso">
+                de: R$30,75/m2
+            </p>
+            <p class="preco">
+                por: R$28,90/m2
+            </p>
+            <p class="divisao">
+                ou R$31,00/m2 em 13 vezes no cartão banese
+            </p>
+            <div class="formas">
+                <img src="../Assets/card.svg" alt="card" width="30px" height="30px">
+                <a class="ver">
+                    Ver outras formas de pagamento
+                </a>
+            </div>
+            <div class="row-calc">
+                <div class="containerCalc">
+
+                    <div class="top">
+                        Calcular metragem
+                    </div>
+                    <div class="container-value">
+                        <button type="button" id="diminuir" class="button-operation">
+                            -
+                        </button>
+                        <span id="value">2,00/m2</span>
+                        <button type="button" id="aumentar" class="button-operation">
+                            +
+                        </button>
+                    </div>
+
+                </div>
+                <div class="containerCalc">
+                    <div class="top">
+                        Total
+                    </div>
+                    <div class="container-value">
+                        <span id="value">R$69,80</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="containerCompra">
+                <p id="necessidade" class="necessario">
+                    Você vai precisar de
+                    <br>
+                    <strong>1 caixa(s)</strong>
+                </p>
+                <button class="productButton">
+                    Adicionar ao carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="navDescAvaliacao">
+        <a class="nav-desc">
+            Descrição
+        </a>
+        <a class="nav-aval">
+            Avaliações
+        </a>
+    </div>
+    <section class="descricao">
+        <h4 class="text-center">
+            Conheça o Piso HD em Cerâmica Estilo Mármore Acetinado Marmogres
+        </h4>
+        <p class="text-body-secondary">
+            Os modelos de piso cerâmico existentes no mercado oferecem uma vasta gama de acabamentos para sua
+            superfície; por essa razão, são indicados para qualquer espaço, seja ele interno ou externo, amplo ou
+            compacto.
+            O acabamento natural é pouco escorregadio e fácil de limpar, bom para ambientes comerciais, industriais e
+            até para locais molhados como áreas de serviço e banheiros. Enquanto isso, a cerâmica polida é lisa e
+            brilhante, ideal para embelezar locais secos, como quartos, salas e espaços comerciais. O famoso porcelanato
+            externo mostra já pelo nome que é indicado justamente para áreas externas, como decks de piscinas, mais
+            áspero e com alta resistência ao escorregamento.
+        </p>
+        <h4 class="text-center">
+            O Acabamento Acetinado
+        </h4>
+        <p class="text-body-secondary">
+            Embora o destaque tenha sempre sido do porcelanato polido, o piso acetinado tem ganhado espaço e é
+            recomendado para quem quer durabilidade e beleza em sua construção ou reforma. Sua aparência harmoniza com
+            diferentes estilos de decoração, além de garantir todo o aconchego no ambiente. Seja para áreas internas ou
+            para áreas externas, o Piso HD em Cerâmica Estilo Mármore Marmogres pode ser facilmente usado.
+            O piso acetinado se destaca também pela sua resistência e durabilidade; também em cores uniformes, gera mais
+            conforto visual. O fato de ser acetinado faz com que esse modelo gere menos reflexo de luz, sendo mais
+            aconchegante e agradável. O porcelanato acetinado é muito versátil, com diversas opções de design.
+            A sua principal diferença em relação ao porcelanato polido é a ausência de brilho. Além disso, a tecnologia
+            digital possibilita a criação de diversos detalhes, desde madeiras nobres, reproduzidas no porcelanato, até
+            a textura do cimento queimado, que é uma forte tendência.
+            A ausência de brilho do Porcelanato HD Estilo Mármore proporciona maior aconchego ao ambiente com seu
+            acabamento fosco, dando liberdade para um projeto onde a iluminação não seja prejudicada ou cria reflexos,
+            como nas versões polidas.
+            O acabamento acetinado garante maior durabilidade e resistência a riscos, além de apresentar maior
+            resistência às manchas por não apresentar brilho. Outra vantagem importante é a facilidade na limpeza, já
+            que um pano úmido com detergente neutro são mais do que suficientes para realizar a manutenção. Embora não
+            chegue a ser antiderrapante, o acabamento acetinado também garante ao porcelanato maior aderência do que o
+            polido.
+            </p2>
+        </p>
+    </section>
+
+    <section class="avaliacao">
+        <h1>Avaliações</h1>
+        <div id="avaliarproduto" class="avaliarproduto">
+
+            <h2 class="title medium">Avaliar produto<i class="showcase__icon"></i></h2>
+
+            <span class="dados">
+                Preencha seus dados, avalie e clique no botão Avaliar Produto.
+            </span>
+
+            <form class="formAvaliacao" method="get" action="">
+
+                <input class="inputAvaliacao" id="txtAvaliacaoNome" name="txtAvaliacaoNome" type="text" value="Nome">
+                <input class="inputAvaliacao" id="txtAvaliacaoEmail" name="txtAvaliacaoEmail" type="text"
+                    value="E-mail">
+
+                <textarea class="textAreaAvaliacao" cols="20" id="txtAvaliacaoDescricao" name="txtAvaliacaoDescricao">
+                        Comentários
+                    </textarea>
+
+                <div class="pontosAvaliacao clear">
+                    <a href="">
+                        <img src="../Assets/heart2.svg" width="20px" height="20px" id="aval1" alt="Muito Ruim">
+                    </a>
+                    <a href="">
+                        <img src="../Assets/heart2.svg" width="20px" height="20px" id="aval2" alt="Ruim">
+                    </a>
+                    <a href="">
+                        <img src="../Assets/heart2.svg" width="20px" height="20px" id="aval3" alt="Bom">
+                    </a>
+                    <a href="">
+                        <img src="../Assets/heart2.svg" width="20px" height="20px" id="aval4" alt="Muito Bom">
+                    </a>
+                    <a href="">
+                        <img src="../Assets/heart1.svg" width="20px" height="20px" id="aval5" alt="Excelente">
+                    </a>
+
+                    <select id="ddlNota" name="ddlNota" class="valid">
+                        <option selected="selected" value="5">Excelente</option>
+                        <option value="4">Muito Bom</option>
+                        <option value="3">Bom</option>
+                        <option value="2">Ruim</option>
+                        <option value="1">Muito Ruim</option>
+                    </select>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    </div>
+    <footer class="text-center text-white" style="background-color: #0a0">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="quem-somos.html">
+                                Quem Somos
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="politicas-de-privacidade.html">
+                                Politicas de privacidade
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="trabalhe-conosco.html">
+                                Trabalhe conosco
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="quero-fazer-meu-orçamento.html">
+                                Quero fazer meu orçamento
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a class="text-white" href="novas-tendencias.html">
+                                Novas Tendencias
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+
+            </section>
+
+            <hr class="my-2" />
+
+            <div class="row d-flex justify-content-center">
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <p>
+                                Uma empresa de qualidade que visa melhorar cada vez mais os seus produtos
+                                A Itacerâmica busca melhorias dia a dia, sempre se colocando a disposição para novos
+                                conceitos e formas de inovar e satisfazer seus clientes com toda a qualidade e segurança
+                                que a construção civil exige.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <hr class="my-5" />
+
+            <details>
+                <summary>Informações adicionais</summary>
+                <ul>
+                    <li>
+                        Formas de pagamento aceitas: cartões(banese e o que passar na maquininha), dinheiro e Pix.
+                    </li>
+                    <li>
+                        Itacerâmica Marcos Dósea produções Ltda. | CNPJ 00.000.000/0000-00
+                    </li>
+                    <li>
+                        Av. Ver. Olímpio Grande, s/n - Porto, Itabaiana - SE, 49500-000
+                    </li>
+                </ul>
+            </details>
+
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023-2023 Itacerâmica.com, Inc. ou suas afiliadas
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

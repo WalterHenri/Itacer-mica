@@ -1,0 +1,615 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: #00aa00;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-evenly;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.logo {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    color: #fff;
+}
+
+.caixa-de-pesquisa {
+    width:50%;
+    color: #F5F5F5;
+    margin: 3%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.pesquisa {
+    width:100%;
+    height: min-content;
+
+    background: #F5F5F5;
+    border-radius: 100px;
+    border: 3px solid #938D8D;
+    display: flex;
+    align-items: center;
+    align-content: center;    
+}
+
+.pesquisa input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    padding-right: 3%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+::placeholder {
+    color:#938D8D;
+}
+
+.pesquisa button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+#perfil {
+    align-items: center;
+    display: flex;
+    background: none;
+    border:none;
+    float: right;
+}
+
+#perfil label {
+    padding-right: 15%;
+    color:#FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav {
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+
+ul.Segmentos {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-li:hover {
+    background-color: #F5F5F5;
+    border-bottom-color: #938D8D;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+.nav-li {
+    float: left;
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+
+.nav-li-active {
+    display: block;
+    float: left;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-bottom-color: #00aa00;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+.nav-li-active:hover {
+   background-color: #f5f5f5;
+}
+
+.nav-anchor {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 15px;
+    color: #aaaaaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-link-active {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 15px;
+    color: #00aa00;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.dropdown-nav {
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    .Segmentos {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: block;
+        background-color: transparent;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #0a0;
+        width: 10%;
+        height: auto;
+        padding: 5px; 
+
+    }
+
+    .dropdown-nav:hover {
+        border-color:#00aa00;
+        border-width: 4px;
+    }
+
+    nav {
+        margin: 10px;
+    }
+}
+
+.dropdown-pesquisa {
+    background-color: transparent;
+    border: none;
+    display: none;
+    width: 30%;
+    height: auto;
+    color: #fff;
+}
+
+@media screen and (max-width:650px) {
+    header {
+        padding-left: 1%;
+        padding-right: 1%;
+        align-content:space-around;
+    }
+
+    .caixa-de-pesquisa {
+        display: none;
+    }
+
+    .dropdown-pesquisa {
+        float: right;
+        display: flex;
+        width: 10%;
+    }
+
+    .dropdown-pesquisa:hover {
+        background-color: #060;
+        border-radius: 50%;
+    }
+
+    #perfil {
+
+        float: right;
+    
+    }
+
+    #perfil label { 
+        padding-right: 1%;
+        
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+}
+
+
+#promocao {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("Assets/pisos.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 250px;
+}
+
+#slogan {
+    font-family:Raleway;
+    font-style: bold;
+    line-height: 75px;
+    font-weight: 800;
+    font-size: 52px;
+    color:#00aa00;
+    
+    padding-left: 10%;
+    height: 0px;
+}
+
+#promo {
+    font-family: Raleway;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 22px;
+    padding-left: 10%;
+    color: #fff;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    width: 20%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.p_img {
+    width:100%;
+    height:100%;
+}
+
+.nome {
+    font-family:cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8em;
+    color:black;
+}
+
+.precofalso {
+    font-family:cursive;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-decoration-line: line-through;
+    color: #938D8D;
+}
+
+.preco {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #00AA00;
+}
+
+.comprar {
+    display: none;
+    background-color: #00AA00;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-style:normal;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+
+.favoritar {
+    display: none;
+}
+
+.produtos:hover .precofalso {
+   display: none;
+}
+
+.produtos:hover .preco {
+   display: none;
+}
+.produtos:hover .comprar {
+    display: inline-block;
+}
+
+@media screen and (max-width:650px) {
+    .produtos {
+        width: 40%;
+    }
+}
+
+/*css referente ao produto individual*/
+#Product {
+    padding-left:3%;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    background-color: #e0e0e0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Detalhes{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 40%;
+}
+.Imagem {
+    
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.ImagemPrincipal {
+    width: 90%;
+    max-width: 500px;
+    max-height: 480px;
+    padding: 5%;
+    background: #f0f0f0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.listaImagens {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1%;
+    list-style-type: none;
+}
+
+.listaImagens li {
+    border-radius: 20px;
+    background: #f0f0f0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10%;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.listaImagens li img {
+    max-width: 107px;
+    max-height: 82px;
+    flex-shrink: 0;
+    padding: 15%;
+}
+
+@media screen and (max-width:1250px) {
+    .Imagem{
+        width: 70%;
+        align-self: center;
+    }
+    #Product{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:830px) {
+    .produtos {
+        width: 40%;
+    }
+    .ImagemPrincipal {
+        width: 95%;
+    }
+    .Detalhes {
+        width: 90%;
+    }
+}
+.Titulo {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.Detalhes .preco{
+    color: #0A0;
+    font-family: Raleway;
+    font-size: 2em;
+    font-style:normal;
+    font-weight:900;
+    line-height: normal;
+}
+.ver {
+    text-decoration: underline;
+    color: #000;
+    font-size: 0.9em;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    cursor: pointer;
+    
+}
+
+.divisao {
+    color: #938D8D;
+    font-size: 1.2em;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.row-calc {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerCalc {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    width: 169px;
+    height: 69px;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+
+.top {
+    background: #494949;
+    color: #FFF;
+    font-size: 14px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.container-value{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.button-operation {
+    
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 2em;
+    font-family: Raleway;
+    font-weight: 1000;
+    
+}
+.button-operation:hover {
+    
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    
+}
+
+#value {
+    color: #000;
+    font-size:1.2em;
+    font-family: Raleway;
+    font-weight: 800;
+    align-self:center;
+    margin: 2%;
+}
+
+.containerCompra {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.productButton {
+    background-color: #00aa00;
+    color: #FFF;
+    border-style: none;
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.necessario {
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.navDescAvaliacao {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.nav-desc {
+    display: block;
+    float: left;
+    border-bottom: #0a0;
+    color: #0a0;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-bottom-width: 5px;
+    border-bottom-style:solid ;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-aval {
+    display: block;
+    float: left;
+    border-bottom: #494949;
+    color: #494949;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-bottom-width: 5px;
+    border-bottom-style:solid ;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descricao {
+    display: block;
+    word-break:normal;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.avaliacao{
+    display: none;
+}
